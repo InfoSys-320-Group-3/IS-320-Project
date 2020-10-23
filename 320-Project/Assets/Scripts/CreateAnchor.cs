@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class CreateAnchor : MonoBehaviour
 {
@@ -24,9 +25,12 @@ public class CreateAnchor : MonoBehaviour
 
     public void RemoveHazard()
     {
-        GameObject toRemove = spawnedhazards[0];
-        spawnedhazards.Remove(toRemove);
-        Destroy(toRemove);
+        Console.WriteLine(spawnedhazards.Count);
+        if (spawnedhazards.Count > 0){
+            GameObject toRemove = spawnedhazards[0];
+            spawnedhazards.Remove(toRemove);
+            Destroy(toRemove);
+        }
     }
 
 }

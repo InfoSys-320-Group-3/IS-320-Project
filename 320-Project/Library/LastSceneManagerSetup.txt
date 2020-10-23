@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/FurnishedCabin/Scenes/Fire Scene.unity
+- path: Assets/Scenes/FireScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
